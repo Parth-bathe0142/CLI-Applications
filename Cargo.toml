@@ -1,7 +1,2 @@
-[package]
-name = "Practice_CLI_tools_and_applications"
-version = "0.1.0"
-edition = "2021"
-
-[dependencies]
-clap = { version = "4.1", features = ["derive"] }
+[workspace]
+members = ["bulk-file-renamer", "grep"]
