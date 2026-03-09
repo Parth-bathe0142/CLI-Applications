@@ -1,2 +1,3 @@
 [workspace]
-members = ["bulk-file-renamer", "grep"]
+resolver = "3"
+members = ["bulk-file-renamer", "grep", "wat-printer"]

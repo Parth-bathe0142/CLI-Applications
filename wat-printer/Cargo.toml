@@ -1,0 +1,8 @@
+[package]
+name = "wat-printer"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap = "4.5.60"
+wasmprinter = "0.245.1"
