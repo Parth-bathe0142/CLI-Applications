@@ -12,26 +12,27 @@ Renames all files in a given folder by replacing parts of file names, or by addi
   ```
 - Prepend text to file names:
   ```
-  bulk-file-renamer -p "path/to/dir" --start --with "prefix_"
+  bulk-file-renamer --start --with "prefix_"
   ```
 - Append text to file names:
   ```
-  bulk-file-renamer -p "path/to/dir" --end --with "_suffix"
+  bulk-file-renamer --end --with "_suffix"
   ```
 - Remove text from file names (omit `--with`):
   ```
-  bulk-file-renamer -p "path/to/dir" --replace "text_to_remove"
+  bulk-file-renamer --replace "text_to_remove"
   ```
 
 **Arguments:**
 
 | Argument | Short | Long | Aliases | Description |
 |---|---|---|---|---|
-| `path` | `-p` | `--path` | — | Path of the folder whose files are to be renamed *(required)* |
+| `path` | `-p` | `--path` | — | Path of the folder whose files are to be renamed *(optional, defaults to current directory)* |
 | `replace` | `-r` | `--replace` | `--remove` | Text in file names to be replaced or removed; conflicts with `--start`/`--end` |
 | `start` | `-s` | `--start` | `--prepend`, `--prefix` | Add text to the start of file names; requires `--with`; conflicts with `--replace`/`--end` |
 | `end` | `-e` | `--end` | `--append`, `--suffix` | Add text to the end of file names; requires `--with`; conflicts with `--replace`/`--start` |
 | `with` | `-w` | `--with` | — | The replacement or addition to apply; can be omitted to delete matched text |
+| `quiet` | `-q` | `--quiet` | `--silent` | Prevents logging of successful operations to the console |
 
 ---
 
